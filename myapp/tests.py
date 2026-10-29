@@ -7,7 +7,13 @@ class ApiViewTests(TestCase):
         response = self.client.get(reverse("home"))
 
         self.assertEqual(response.status_code, 200)
-        self.assertEqual(response.json(), {"message": "Welcome to CSC 325!"})
+        self.assertEqual(
+            response.json(),
+            {
+                "message": "Welcome to CSC 325!",
+                "status": "CI/CD Pipeline Successful",
+            },
+        )
 
     def test_about_returns_course_information(self):
         response = self.client.get(reverse("about"))

@@ -1,10 +1,16 @@
+
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 
 
 @api_view(["GET"])
 def home(request):
-    return Response({"message": "Welcome to CSC 325!"})
+    return Response(
+        {
+            "message": "Welcome to CSC 325!",
+            "status": "CI/CD Pipeline Successful",
+        }
+    )
 
 
 @api_view(["GET"])
