@@ -8,8 +8,8 @@ def home(request):
     return Response(
         {
             "message": "Welcome to CSC 325!",
-            # Status confirms the CI/CD pipeline is working.
             "status": "CI/CD Pipeline Successful",
+            # The response confirms successful CI/CD deployment.
         }
     )
 
