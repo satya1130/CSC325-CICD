@@ -9,6 +9,7 @@ def home(request):
         {
             "message": "Welcome to CSC 325!",
             "status": "CI/CD Pipeline Successful",
+            # The response confirms successful CI/CD deployment.
         }
     )
 
